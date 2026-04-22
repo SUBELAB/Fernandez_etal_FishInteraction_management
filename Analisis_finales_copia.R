@@ -10,15 +10,13 @@ library(readr)
 library(lme4)
 library(MuMIn)
 library(gridExtra)
-library(emmeans)
+library(ggdist)
 
 
 
-library(glmmTMB)
-library(DHARMa)
 
 ##Titulo:Evaluación del efecto del régimen de manejo sobre las interacciones ecológicas de peces en bosques dominados por macroalgas pardas en Chile
-##Autores: Ítalo Fernández-Cisternas1, Catalina Castillo-Sáez1, Catalina S. Ruz1, Alejandro Pérez-Matus1,2, Mauricio F. Landaeta2,3,4. 
+##Autores: Catalina Castillo-Sáez1, Catalina S. Ruz1, Ítalo Fernández-Cisternas1, Alejandro Pérez-Matus1,2, Mauricio F. Landaeta2,3,4. 
 ##fecha: Diciembre 2024
 
 #write.csv(Variables,"Alldata_final.csv")
@@ -35,21 +33,18 @@ Variables<-read.csv("Alldata_final.csv") %>%
             biom_std=sum(biomass_std),
             int_str=sum(interaction_strength),
             detec=sum(detections),
-            time=first(useful_time)) 
-
+            time=first(useful_time))
 
 random_var <- read.csv("Alldata.csv") %>% 
   dplyr::select(year, season, video_id, date) %>%
   distinct(video_id, .keep_all = TRUE)  # Mantiene una sola fila por video_id
 
 Variables <- left_join(Variables, random_var, by = "video_id", "year")
-Variables$time_rf=paste(Variables$year,Variables$season)
-Variables$siteMan= paste(Variables$site,Variables$management)
 VariablesCHA <- Variables %>% filter(site == "Chañaral de Aceituno")
 VariablesLC <- Variables %>% filter(site == "Las Cruces")
 
 Variables_summary <- Variables %>% 
-  group_by(management,site) %>%
+  group_by(management, site,year) %>%
   summarise(total_abundance = mean(abun_std, na.rm = TRUE),
             se_abundance = sd(abun_std)/sqrt(length(management)),
             total_biomass = mean(biom_std, na.rm = TRUE),
@@ -110,11 +105,7 @@ richness_normal_mix2 <- lmer(rich ~ management + offset(log(time)) + (1 | year) 
 )
 summary(richness_normal_mix2)
 Anova(richness_normal_mix2, type="III")                            
-  
-# Comparaciones de Tukey para 'management'
-tukey_rich <- emmeans(richness_normal_mix2, pairwise ~ management, adjust = "tukey")
-print(tukey_rich)
-
+                             
 r.squaredGLMM(richness_normal_mix2)*100
 
 # Analisis de residuales del modelo 
@@ -164,7 +155,7 @@ ggplot(Variables_summary, aes(x = management,fill = management)) +
   theme_bw() +
   labs(title = "RUV-registered Abundance",
        x = "Management regime",
-       y = "Abundance (ind/2m²*hr)",
+       y = "Abundance (MaxN/2m²*hr)",
        fill = "Management regime") +
   scale_fill_manual(values = c("MPA" = "springgreen4", "TURF" = "dodgerblue", "OA" = "brown1")) +
   theme(plot.title = element_text(size = 18, hjust = 0.5),
@@ -212,12 +203,12 @@ print(tukey_abun)
 
 # Analisis de residuales del modelo 
 # Calcular residuales y valores ajustados
-VariablesCHA$residuals <- residuals(abundance_nb_mixed1, type = "pearson")  # Residuales tipo Pearson
-VariablesCHA$fitted <- fitted(abundance_nb_mixed1)  # Valores ajustados
+Variables$residuals <- residuals(abundance_nb_mixed, type = "pearson")  # Residuales tipo Pearson
+Variables$fitted <- fitted(abundance_nb_mixed)  # Valores ajustados
 # guarda la informacion requerida para el analisis de residuales
 
 # Q-Q plot
-qq.model <- ggplot(data = VariablesCHA, aes(sample = residuals)) + 
+qq.model <- ggplot(data = Variables, aes(sample = residuals)) + 
   stat_qq_point() +
   stat_qq_line() +
   stat_qq_band(alpha = 0.3) +
@@ -229,7 +220,7 @@ qq.model <- ggplot(data = VariablesCHA, aes(sample = residuals)) +
   )
 
 # Residuales vs valores predichos
-res.fit <- ggplot(data = VariablesCHA, aes(x = fitted, y = residuals)) + 
+res.fit <- ggplot(data = Variables, aes(x = fitted, y = residuals)) + 
   geom_point(aes(col = management), size = 2) +
   geom_hline(yintercept = 0, linetype = 2, size = 1.2) +
   theme_bw() +
@@ -339,7 +330,7 @@ ggplot(Variables_summary, aes(x = management, fill = management)) +
        x = "Management regime",
        y = "Strength (n° interactions/2m²*hr)",
        fill = "Management regime") +
-  facet_grid( ~site)+
+  facet_grid(~year ~site)+
   scale_fill_manual(values = c("MPA" = "springgreen4", "TURF" = "dodgerblue", "OA" = "brown1")) +
   theme(plot.title = element_text(size = 18, hjust = 0.5),
         axis.title.x = element_text(size = 16),
@@ -350,51 +341,61 @@ ggplot(Variables_summary, aes(x = management, fill = management)) +
         panel.grid = element_blank()) + 
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
 
-#ggsave("fish_strength_year.png",width = 10, height = 7)
+ggsave("fish_strength_year.png",width = 10, height = 7)
 
-hist(Variables$detec)
+#Modelo general
+Finteract_nb_mixed <- glmer.nb(detec ~ site + management + offset(log(time)) + (1 | year),
+                                data = Variables)
+summary(Finteract_nb_mixed)
+Anova(Finteract_nb_mixed, type="III")
 
-
-<<<<<<< HEAD
-# Comparaciones de Tukey para 'management'
-tukey_strength1 <- emmeans(Finteract_nb_mixed1, pairwise ~ management, adjust = "tukey")
-print(tukey_strength1)
+# Modelo mixto con distribución binomial negativa para Chañaral
+Finteract_nb_mixed1 <- glmer.nb(detec ~ management + offset(log(time)) + (1 | year),
+                               data = VariablesCHA)
+                               
+summary(Finteract_nb_mixed1)
+Anova(Finteract_nb_mixed1, type="III")
+r.squaredGLMM(Finteract_nb_mixed1)*100
 
 # Modelo mixto con distribución binomial negativa para Las Cruces
 Finteract_nb_mixed2 <- glmer.nb(detec ~ management + offset(log(time)) + (1 | year),
-                                data = VariablesLC)
-=======
-#analisis fuerza interaccion
-hist(Variables$detec)
-Finteract_mixed <- glmmTMB(
-  detec ~ site + management + offset(log(time)) + (1 | time_rf),
-  family = nbinom2(link = "log"),
-  data = Variables
-)
->>>>>>> 629b359 (Actualiza análisis y corrige script principal)
+                                data = Variables %>% filter(site == "Las Cruces"))
 
-summary(Finteract_mixed)
-Anova(Finteract_mixed, type="III")
-
-<<<<<<< HEAD
-# Comparaciones de Tukey para 'management'
-tukey_strength2 <- emmeans(Finteract_nb_mixed2, pairwise ~ management, adjust = "tukey")
-print(tukey_strength2)
+summary(Finteract_nb_mixed2)
+Anova(Finteract_nb_mixed2, type="III")
+r.squaredGLMM(Finteract_nb_mixed2)*100
 
 # Analisis de residuales del modelo 
 # Calcular residuales y valores ajustados
-Variables$residuals <- residuals(Finteract_nb_mixed1, type = "pearson")  # Residuales tipo Pearson
-Variables$fitted <- fitted(Finteract_nb_mixed1)  # Valores ajustados
+Variables$residuals <- residuals(Finteract_nb_mixed, type = "pearson")  # Residuales tipo Pearson
+Variables$fitted <- fitted(Finteract_nb_mixed)  # Valores ajustados
 # guarda la informacion requerida para el analisis de residuales
-=======
-#residuales
-res <- simulateResiduals(Finteract_mixed)
-plot(res)
->>>>>>> 629b359 (Actualiza análisis y corrige script principal)
 
-# Comparaciones de Tukey 
-tukey_strength <- emmeans(Finteract_mixed, pairwise ~ site + management  , adjust = "tukey")
-print(tukey_strength)
+# Q-Q plot
+qq.model <- ggplot(data = Variables, aes(sample = residuals)) + 
+  stat_qq_point() +
+  stat_qq_line() +
+  stat_qq_band(alpha = 0.3) +
+  theme_bw() +
+  labs(x = "Theoretical Quantiles", y = "Sample Quantiles") +
+  theme(
+    axis.title = element_text(size = 18), 
+    axis.text = element_text(size = 16)
+  )
+
+# Residuales vs valores predichos
+res.fit <- ggplot(data = Variables, aes(x = fitted, y = residuals)) + 
+  geom_point(aes(col = management), size = 2) +
+  geom_hline(yintercept = 0, linetype = 2, size = 1.2) +
+  theme_bw() +
+  labs(x = "Fitted", y = "Residuals") +
+  theme(
+    axis.title = element_text(size = 18), 
+    axis.text = element_text(size = 16),
+    legend.position = "none"
+  )
+
+plot_grid(qq.model,res.fit, nrow=1)
 
 #CORRELACIONES RUV-strength-----
 Variables$management<- factor(levels = c("MPA", "TURF", "OA"),Variables$management)
@@ -496,54 +497,108 @@ biomass_plot1 <- ggplot(Variables, aes(x = biom_std, y = int_str, color = manage
 grid.arrange(richness_plot1, abundance_plot1, biomass_plot1, ncol = 1)
 
 
+#CORRELACIONES RUV-UVC-----
+Values<-read.csv("UVC_values.csv")
 
+#promediar un valor por dia
+Values_days <- Values %>% 
+  group_by(site, management,date, transect) %>%
+  summarise(rich_std = sum(rich_std),
+            abun_std = sum(abun_std),
+            biom_std = sum(biom_std)) %>% 
+  group_by(site, management,date) %>% 
+  summarise(rich_UVC = mean(rich_std, na.rm = TRUE),
+            se_richness = sd(rich_std)/sqrt(length(management)),
+            abun_UVC= mean(abun_std),
+            se_abundance= sd(abun_std)/sqrt(length(management)),
+            biom_UVC= mean(biom_std),
+            se_biomass= sd(biom_std)/sqrt(length(management)))
+  
+#convertir a m²
+Variables_days <- Variables %>% 
+  mutate(rich_std = rich_std/2,
+         abun_std= abun_std/2,
+         biom_std= biom_std/2,
+         int_str= int_str) %>% 
+  group_by(site, management,date) %>% 
+  summarise(rich_RUV = mean(rich_std, na.rm = TRUE),
+            abun_RUV= mean(abun_std),
+            biom_RUV= mean(biom_std),
+            int_str= mean(int_str))
 
+UVC_RUVS <- Variables_days %>% 
+  inner_join(Values_days, by = c("site", "management", "date")) 
 
+#1. Richness------
+richness_plot <- ggplot(UVC_RUVS, aes(x = rich_RUV, y = rich_UVC)) +
+  geom_point() +  # Agregar puntos
+  geom_smooth(method = "lm", color = "blue", se = TRUE) +  # Línea de regresión
+  labs(title = "Richness",
+       x = "RUVs Richness (species/m²*hr)",
+       y = "UVCs Richness (species/m²)") +
+  annotate("text", x = max(UVC_RUVS$rich_RUV) * 0.7, 
+           y = max(UVC_RUVS$rich_UVC) * 0.9, 
+           label = paste("R =", round(0.365, 3)), 
+           size = 5, hjust = 0) +
+  theme_linedraw() + # Aplicar un tema minimalista
+  theme(plot.title = element_text(hjust = 0.5))  # Centrar el título
 
+richness_correlation <- cor.test(UVC_RUVS$rich_RUV, UVC_RUVS$rich_UVC, use = "complete.obs")
 
+#2. Abundance------
+abundance_plot <- ggplot(UVC_RUVS, aes(x = abun_RUV, y = abun_UVC)) +
+  geom_point() +  # Agregar puntos
+  geom_smooth(method = "lm", color = "blue", se = TRUE) +  # Línea de regresión
+  labs(title = "Abundance",
+       x = "RUVs Abundance (maxN/m²*hr)",
+       y = "UVCs Abundance (ind/m²)") +
+  annotate("text", x = max(UVC_RUVS$abun_RUV) * 0.7, 
+           y = max(UVC_RUVS$abun_UVC) * 0.9, 
+           label = paste("R =", round(0.701, 3)), 
+           size = 5, hjust = 0) +
+  theme_linedraw() + # Aplicar un tema minimalista
+  theme(plot.title = element_text(hjust = 0.5))  # Centrar el título
+
+abundance_correlation <- cor.test(UVC_RUVS$abun_RUV, UVC_RUVS$abun_UVC, use = "complete.obs")
+
+#3. Biomass------
+biomass_plot <-ggplot(UVC_RUVS, aes(x = biom_RUV, y = biom_UVC)) +
+  geom_point() +  # Agregar puntos
+  geom_smooth(method = "lm", color = "blue", se = TRUE) +  # Línea de regresión
+  labs(title = "Biomass",
+       x = "RUVs Biomass (kg/m²*hr)",
+       y = "UVCs Biomass (kg/m²)") +
+  annotate("text", x = max(UVC_RUVS$biom_RUV) * 0.7, 
+           y = max(UVC_RUVS$biom_UVC) * 0.9, 
+           label = paste("R =", round(0.652, 3)), 
+           size = 5, hjust = 0) +
+  theme_linedraw() + # Aplicar un tema minimalista
+  theme(plot.title = element_text(hjust = 0.5))  # Centrar el título
+
+biomass_correlation <- cor.test(UVC_RUVS$biom_RUV, UVC_RUVS$biom_UVC, use = "complete.obs")
+
+grid.arrange(richness_plot, abundance_plot, biomass_plot, ncol = 3)
 
 #INFO UVCs------
-Values<-read.csv("UVC_values.csv") 
-Values$date <- as.Date(Values$date)
-Values$month <- as.numeric(format(Values$date, "%m"))
-Values$year <- as.numeric(format(Values$date, "%y"))
-Values <- Values %>%
-  mutate(
-    date = ymd(date),
-    season = case_when(
-      (month(date) == 12 & day(date) >= 21) | (month(date) %in% c(1, 2)) | (month(date) == 3 & day(date) <= 20) ~ "summer",
-      (month(date) == 3 & day(date) >= 21) | (month(date) %in% c(4, 5)) | (month(date) == 6 & day(date) <= 20) ~ "fall",
-      (month(date) == 6 & day(date) >= 21) | (month(date) %in% c(7, 8)) | (month(date) == 9 & day(date) <= 20) ~ "winter",
-      (month(date) == 9 & day(date) >= 21) | (month(date) %in% c(10, 11)) | (month(date) == 12 & day(date) <= 20) ~ "spring"
-    )
-  )
+Values_summary <- Values%>% 
+  group_by(site, management, transect, date, year) %>%
+  summarise(rich_std = sum(rich_std),
+            abun_std = sum(abun_std),
+            biom_std = sum(biom_std)) %>% 
+  group_by(site, management, year) %>% 
+  summarise(total_richness = mean(rich_std, na.rm = TRUE),
+            se_richness = sd(rich_std)/sqrt(length(management)),
+            total_abundance= mean(abun_std),
+            se_abundance= sd(abun_std)/sqrt(n()),
+            total_biomass= mean(biom_std),
+            se_biomass= sd(biom_std)/sqrt(n()))
 
+ValuesCHA <- Values %>% filter(site == "Chañaral de Aceituno")
+ValuesLC <- Values %>% filter(site == "Las Cruces")
 
-Values2 <- Values %>% 
-group_by(site, management,date, year, season, method, transect ) %>% 
-  summarise(
-         richness=sum(rich_std),
-         abundance=sum(abun_std),
-         biomass=sum(biom_std)) 
-Values2$siteMan<- paste(Values2$site,Values2$management)
-Values2$time_rf <- paste(Values2$year, Values2$season)
-
-Values_summary <- Values2 %>% 
-  group_by(site, management) %>% 
-  summarise(total_richness = mean(richness, na.rm = TRUE),
-            se_richness = sd(richness)/sqrt(n()),
-            total_abundance= mean(abundance),
-            se_abundance= sd(abundance)/sqrt(n()),
-            total_biomass= mean(biomass),
-            se_biomass= sd(biomass)/sqrt(n()))
 
 Values_summary$management <-factor(Values_summary$management, 
                                    levels = c("MPA", "TURF", "OA")) 
-
-table(Values2$site, Values2$management)
-table(Values2$site)
-table(Values2$time_rf,Values2$site)
-
 
 #1. Richness----
 ggplot(Values_summary, aes(x = management, fill = management)) +
@@ -565,24 +620,64 @@ ggplot(Values_summary, aes(x = management, fill = management)) +
         strip.text = element_text(size = 16),
         panel.grid = element_blank()) + 
   scale_y_continuous(expand = expansion(mult = c(0, 0.1))) + # Expande el eje y automáticamente
-  facet_grid(~site)
+  facet_grid(~year~site)
 
-#ggsave("uvc_richness_years.png",width = 10, height = 7)
+ggsave("uvc_richness_years.png",width = 10, height = 7)
 
-##Analysis riqueza ---------------------------------------------------
-hist(Values2$richness)
-richnUVC_gauss_mix <- glmmTMB(richness ~ site + management + (1 | time_rf) ,
-                              family = gaussian(),
-                              data = Values2)
+##Analisis 
+hist(Values$richness)
 
-summary(richnUVC_gauss_mix)
-Anova(richnUVC_gauss_mix, type = "III")
-res <- simulateResiduals(richnUVC_gauss_mix)
-plot(res)
+# Ajustar el modelo mixto general
+richnUVC_normal_mix <- lmer(
+  richness ~ site + management + offset(log(meters)) + (1 | year) ,
+  data = Values  # Por defecto para gaussian
+)
+summary(richnUVC_normal_mix)
+Anova(richnUVC_normal_mix, type="III")
 
+#Ajustar el modelo a Chañaral
+richnUVC_normal_mix1 <- lmer(
+  richness ~ management + offset(log(meters)) + (1 | year) ,
+  data = ValuesCHA
+)
+summary(richnUVC_normal_mix1)
+Anova(richnUVC_normal_mix1, type="III")
+
+#Ajustar el modelo a Las Cruces
+
+# Analisis de residuales del modelo 
+# Calcular residuales y valores ajustados
+Values$residuals <- residuals(richnUVC_normal_mix, type = "pearson")  # Residuales tipo Pearson
+Values$fitted <- fitted(richnUVC_normal_mix)  # Valores ajustados
+# guarda la informacion requerida para el analisis de residuales
+
+# Q-Q plot
+qq.model <- ggplot(data = Values, aes(sample = residuals)) + 
+  stat_qq_point() +
+  stat_qq_line() +
+  stat_qq_band(alpha = 0.3) +
+  theme_bw() +
+  labs(x = "Theoretical Quantiles", y = "Sample Quantiles") +
+  theme(
+    axis.title = element_text(size = 18), 
+    axis.text = element_text(size = 16)
+  )
+
+# Residuales vs valores predichos
+res.fit <- ggplot(data = Values, aes(x = fitted, y = residuals)) + 
+  geom_point(aes(col = management), size = 2) +
+  geom_hline(yintercept = 0, linetype = 2, size = 1.2) +
+  theme_bw() +
+  labs(x = "Fitted", y = "Residuals") +
+  theme(
+    axis.title = element_text(size = 18), 
+    axis.text = element_text(size = 16),
+    legend.position = "none"
+  )
+
+plot_grid(qq.model,res.fit, nrow=1)
 
 #2. Abundance------
-  hist(Values2$abundance)
 ggplot(Values_summary, aes(x = management, fill = management)) +
   geom_bar(aes(y = total_abundance), stat = "identity", position = "dodge") +
   geom_errorbar(aes(ymin = total_abundance - se_abundance, 
@@ -602,29 +697,65 @@ ggplot(Values_summary, aes(x = management, fill = management)) +
         strip.text = element_text(size = 16),
         panel.grid = element_blank()) + 
   scale_y_continuous(expand = expansion(mult = c(0, 0.1))) + # Expande el eje y automáticamente
-  facet_grid(~site)
+  facet_grid(~year ~site)
 
 ggsave("uvc_abundance_year.png",width = 10, height = 7)
 
-##Analysis abundance
+#Analisis
 #Distribucion abundance
-hist(Values2$abundance)
+hist(Values$abundance)
 
 ##Binomial negativa
-abunUVC_gauss<- glmmTMB(abundance ~ site+ management + (1 | time_rf),
-        family = Gamma(link = "log"),
-        data = Values2)
+abunUVC_nb <- glm.nb(abundance ~ site+ management + offset(log(meters)), 
+                       data = Values #%>% filter(abun <50)
+)
+summary(abunUVC_nb)
+Anova(abunUVC_nb)
 
+##con factores aleatorios 
+# Modelo mixto con distribución binomial negativa
+abunUVC_nb_mixed <- glmer.nb(
+  abundance ~ site + management + offset(log(meters)) + (1 | year),
+  data = Values# %>% filter(abun <50)
+)
 
-summary(abunUVC_gauss)
-Anova(abunUVC_gauss)
-res <- simulateResiduals(abunUVC_gauss)
-plot(res)
+summary(abunUVC_nb_mixed)
+Anova(abunUVC_nb_mixed)
+AIC(abunUVC_nb_mixed,abunUVC_nb)
 
+# Analisis de residuales del modelo 
+# Calcular residuales y valores ajustados
+Values$residuals <- residuals(abunUVC_nb_mixed, type = "pearson")  # Residuales tipo Pearson
+Values$fitted <- fitted(abunUVC_nb_mixed)  # Valores ajustados
+# guarda la informacion requerida para el analisis de residuales
+
+# Q-Q plot
+qq.model <- ggplot(data = Values, aes(sample = residuals)) + 
+  stat_qq_point() +
+  stat_qq_line() +
+  stat_qq_band(alpha = 0.3) +
+  theme_bw() +
+  labs(x = "Theoretical Quantiles", y = "Sample Quantiles") +
+  theme(
+    axis.title = element_text(size = 18), 
+    axis.text = element_text(size = 16)
+  )
+
+# Residuales vs valores predichos
+res.fit <- ggplot(data = Values, aes(x = fitted, y = residuals)) + 
+  geom_point(aes(col = management), size = 2) +
+  geom_hline(yintercept = 0, linetype = 2, size = 1.2) +
+  theme_bw() +
+  labs(x = "Fitted", y = "Residuals") +
+  theme(
+    axis.title = element_text(size = 18), 
+    axis.text = element_text(size = 16),
+    legend.position = "none"
+  )
+
+plot_grid(qq.model,res.fit, nrow=1)
 
 #3. Biomass------
-
-
 ggplot(Values_summary, aes(x = management, fill = management)) +
   geom_bar(aes(y = total_biomass), stat = "identity", position = "dodge") +
   geom_errorbar(aes(ymin = total_biomass - se_biomass, 
@@ -644,45 +775,36 @@ ggplot(Values_summary, aes(x = management, fill = management)) +
         strip.text = element_text(size = 16),
         panel.grid = element_blank()) + 
   scale_y_continuous(expand = expansion(mult = c(0, 0.1))) + # Expande el eje y automáticamente
-  facet_grid(~site)
+  facet_grid(~year ~site)
 
 ggsave("uvc_biomass_year.png",width = 10, height = 7)
 
-#analisis biomasas
-hist(Values2$biomass)
+#Analisis
+hist(Values$biomass)
+#Gamma mixto
+biomUVC_gamma_mixto<- glmer(
+  biomass~ site + management + offset(log(meters)) + (1 | year),
+  family = Gamma(link = "log"),
+  data = Values
+)
 
-BiomUVC_normal_mix <- glmmTMB(biomass ~ site+ management + (1 | time_rf),
-                           family = Gamma(link = "log"),
-                           data = Values2)
+summary(biomUVC_gamma_mixto)
+Anova(biomUVC_gamma_mixto,  type = "III")
 
-summary(BiomUVC_normal_mix)
-Anova(BiomUVC_normal_mix, type="III")
-res <- simulateResiduals(BiomUVC_normal_mix)
-plot(res)
+hist(Values$log_biom)
+##logvariables_management##lognormal mixto
+# Transformar la variable de respuesta
+Values$log_biom <- log(Values$biomass)
 
-#varianza
-plotResiduals(res, Values2$management)
-plotResiduals(res, Values2$site)
-plotResiduals(res, Values2$siteMan)
-plotResiduals(res, Values2$season)
+# Ajustar el modelo lineal mixto con distribución log-normal
+biomUVC_lognormal_mixto <- lmer(
+  log_biom ~ site + management + offset(log(meters)) + (1 | year),
+  data = Values
+)
+summary(biomUVC_lognormal_mixto)
+Anova(biomUVC_lognormal_mixto, type="III")
 
-Biom_UVC_mix <- glmmTMB(biomass ~ site + management + (1 | time_rf),
-                        family = Gamma(link = "log"),
-                        dispformula = ~ siteMan ,
-                        data = Values2)
-
-summary(Biom_UVC_mix)
-Anova(Biom_UVC_mix, type="III")
-res <- simulateResiduals(Biom_UVC_mix)
-plot(res)
-
-
-
-
-# Comparaciones de Tukey 
-tukey_biom <- emmeans(Biom_UVC_mix, pairwise ~ site * management  , adjust = "tukey")
-print(tukey_biom)
-
+AIC(biomUVC_lognormal_mixto, biomUVC_gamma_mixto)
 
 #CORRELACIONES UVC-strength------
 #1. Richness----
@@ -733,97 +855,3 @@ biomass_plot3 <- ggplot(UVC_RUVS, aes(x = biom_UVC, y = int_str)) +
 strength_biomass_cor3 <- cor.test(UVC_RUVS$biom_UVC, UVC_RUVS$int_str, use = "complete.obs")
 
 grid.arrange(richness_plot3, abundance_plot3, biomass_plot3, ncol = 3)
-
-
-
-
-#CORRELACIONES RUV-UVC-----
-str(UVC_RUVS)
-#1. Richness------
-rich_plot <- ggplot(UVC_RUVS, aes(x = rich_RUV, y = rich_UVC)) +
-  geom_point() +  # Agregar puntos
-  geom_smooth(method = "lm", color = "blue", se = TRUE) +  # Línea de regresión
-  labs(title = "Richness",
-       x = "RUVs Richness (species/m²*hr)",
-       y = "UVCs Richness (species/m²)") +
-  annotate("text", x = max(UVC_RUVS$rich_RUV) * 0.7, 
-           y = max(UVC_RUVS$rich_UVC) * 0.9, 
-           label = paste("R =", round(0.365, 3)), 
-           size = 5, hjust = 0) +
-  theme_linedraw() + # Aplicar un tema minimalista
-  theme(plot.title = element_text(hjust = 0.5))  # Centrar el título
-
-#una linea para cada tipo de manejo
-richness_plot <- ggplot(UVC_RUVS, aes(x = rich_RUV, y = rich_UVC, color = management)) +
-  geom_point(size = 3) +  # puntos coloreados por tipo de manejo
-  geom_smooth(method = "lm", se = F) +  # una línea de regresión por tipo de manejo
-  labs(title = "Richness",
-       x = "RUVs Richness (species/m²*hr)",
-       y = "UVCs Richness (species/m²)",
-       color = "Management") +
-  theme_linedraw() +
-  theme(plot.title = element_text(hjust = 0.5))  # centrar el título
-
-print(richness_plot)
-
-
-richness_correlation <- cor.test(UVC_RUVS$rich_RUV, UVC_RUVS$rich_UVC, use = "complete.obs")
-
-#2. Abundance------
-abundance_plot <- ggplot(UVC_RUVS, aes(x = abun_RUV, y = abun_UVC)) +
-  geom_point() +  # Agregar puntos
-  geom_smooth(method = "lm", color = "blue", se = TRUE) +  # Línea de regresión
-  labs(title = "Abundance",
-       x = "RUVs Abundance (maxN/m²*hr)",
-       y = "UVCs Abundance (ind/m²)") +
-  annotate("text", x = max(UVC_RUVS$abun_RUV) * 0.7, 
-           y = max(UVC_RUVS$abun_UVC) * 0.9, 
-           label = paste("R =", round(0.701, 3)), 
-           size = 5, hjust = 0) +
-  theme_linedraw() + # Aplicar un tema minimalista
-  theme(plot.title = element_text(hjust = 0.5))  # Centrar el título
-
-abundance_correlation <- cor.test(UVC_RUVS$abun_RUV, UVC_RUVS$abun_UVC, use = "complete.obs")
-library(ggplot2)
-
-ab_plot <- ggplot(UVC_RUVS, aes(x = abun_RUV, y = abun_UVC, color = management)) +
-  geom_point(size = 3) +  # puntos coloreados por tipo de manejo
-  geom_smooth(method = "lm", se = F) +  # una línea de regresión por tipo de manejo
-  labs(title = "Abundance",
-       x = "RUVs Abundance (maxN/m²*hr)",
-       y = "UVCs Abundance (ind/m²)",
-       color = "Management") +
-  theme_linedraw() +
-  theme(plot.title = element_text(hjust = 0.5))  # centrar el título
-
-print(richness_plot)
-##Hacer corr para cada tipo de manejo. 
-
-#3. Biomass------
-biomass_plot <-ggplot(UVC_RUVS, aes(x = biom_RUV, y = biom_UVC)) +
-  geom_point() +  # Agregar puntos
-  geom_smooth(method = "lm", color = "blue", se = TRUE) +  # Línea de regresión
-  labs(title = "Biomass",
-       x = "RUVs Biomass (kg/m²*hr)",
-       y = "UVCs Biomass (kg/m²)") +
-  annotate("text", x = max(UVC_RUVS$biom_RUV) * 0.7, 
-           y = max(UVC_RUVS$biom_UVC) * 0.9, 
-           label = paste("R =", round(0.652, 3)), 
-           size = 5, hjust = 0) +
-  theme_linedraw() + # Aplicar un tema minimalista
-  theme(plot.title = element_text(hjust = 0.5))  # Centrar el título
-
-biomass_correlation <- cor.test(UVC_RUVS$biom_RUV, UVC_RUVS$biom_UVC, use = "complete.obs")
-
-biom_plot <- ggplot(UVC_RUVS, aes(x = biom_RUV, y = biom_UVC, color = management)) +
-  geom_point(size = 3) +  # puntos coloreados por tipo de manejo
-  geom_smooth(method = "lm", se = F) +  # una línea de regresión por tipo de manejo
-  labs(title = "Biomass",
-       x = "RUVs Biomass (kg/m²*hr)",
-       y = "UVCs Biomass (kg/m²)",
-       color = "Management") +
-  theme_linedraw() +
-  theme(plot.title = element_text(hjust = 0.5))  # centrar el título
-
-grid.arrange(richness_plot, abundance_plot, biomass_plot, ncol = 3)
-
