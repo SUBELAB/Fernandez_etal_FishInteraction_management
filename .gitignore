@@ -4,4 +4,6 @@
 .Ruserdata
 .DS_Store
 *.pptx
+*.png
 *_backup.csv
+.pdf
