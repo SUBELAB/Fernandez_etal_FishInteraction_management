@@ -1,0 +1,466 @@
+﻿serie,site,zone ,TipoDeArea,transect,year,especie ,grupo_funcional,grupo_trofico,N_max,indice_biodiversidad,biomasa_especie,estado
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Isacia conceptionis ,Omnivore,Omnivoro,5,1.859428815,2264.070587,COMPLETO
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.859428815,16.3207625,COMPLETO
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.859428815,1127.648641,COMPLETO
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.859428815,483.9974283,COMPLETO
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,3,1.859428815,17.19180765,COMPLETO
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Hemilutjanus macrophthalmos,General Carnivore,Carnivoro,1,1.859428815,553.3373191,COMPLETO
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.859428815,151.2922882,COMPLETO
+GH010123,Punta el Yeso,Norte,AMERB,2,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.859428815,709.9304767,COMPLETO
+GH019867,Quintay,Central,AMERB,1,2021,Chromis crusma,Planktivore,Planctivoro,3,1.979204517,93.80431114,COMPLETO
+GH019867,Quintay,Central ,AMERB,1,2021,Sebastes oculatus,General Carnivore ,Carnivoro,1,1.979204517,825.0452322,COMPLETO
+GH019867,Quintay,Central ,AMERB,1,2021,Paralichthys adspersus ,General Carnivore ,Carnivoro,1,1.979204517,712.5161895,COMPLETO
+GH019867,Quintay,Central ,AMERB,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.979204517,1456.560095,COMPLETO
+GH019867,Quintay,Central ,AMERB,1,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.979204517,536.3841048,COMPLETO
+GH019867,Quintay,Central ,AMERB,1,2021,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,1.979204517,4254.479539,COMPLETO
+GH019867,Quintay,Central ,AMERB,1,2021,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.979204517,442.6136117,COMPLETO
+GH019867,Quintay,Central ,AMERB,1,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,2,1.979204517,30.26080163,COMPLETO
+GH020199,Quintay,Central ,AMERB,5,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.054920168,389.3119668,COMPLETO
+GH020199,Quintay,Central ,AMERB,5,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.054920168,268.1920524,COMPLETO
+GH020199,Quintay,Central ,AMERB,5,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,2,1.054920168,19.13450085,COMPLETO
+GH020200,Quintay,Central ,AMERB,7,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.560710409,1456.560095,COMPLETO
+GH020200,Quintay,Central ,AMERB,7,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.560710409,435.169875,COMPLETO
+GH020200,Quintay,Central ,AMERB,7,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.560710409,13.1061092,COMPLETO
+GH020200,Quintay,Central ,AMERB,7,2021,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.560710409,63.73743832,COMPLETO
+GH020200,Quintay,Central ,AMERB,7,2021,Chromis crusma,Planktivore,Planctivoro,1,1.560710409,47.62296046,COMPLETO
+GH019868,Quintay,Central ,AMERB,2,2021,Chromis crusma,Planktivore,Planctivoro,4,1.153741943,155.5193757,COMPLETO
+GH019868,Quintay,Central ,AMERB,2,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.153741943,483.9974283,COMPLETO
+GH019868,Quintay,Central ,AMERB,2,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.153741943,16.3207625,COMPLETO
+GH019868,Quintay,Central ,AMERB,2,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.153741943,268.1920524,COMPLETO
+GH019870,Quintay,Central ,AMERB,4,2021,Sebastes oculatus,General Carnivore ,Carnivoro,1,1.427061043,343.0951763,COMPLETO
+GH019870,Quintay,Central ,AMERB,4,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.427061043,483.9974283,COMPLETO
+GH019870,Quintay,Central ,AMERB,4,2021,Chromis crusma,Planktivore,Planctivoro,4,1.427061043,125.0724149,COMPLETO
+GH019870,Quintay,Central ,AMERB,4,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,2,1.427061043,48.46481997,COMPLETO
+GH019870,Quintay,Central ,AMERB,4,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.427061043,268.1920524,COMPLETO
+GH029871,Quintay,Central ,AMERB,3,2021,Chromis crusma,Planktivore,Planctivoro,2,1.549826046,77.75968786,COMPLETO
+GH029871,Quintay,Central ,AMERB,3,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.549826046,728.2800474,COMPLETO
+GH029871,Quintay,Central ,AMERB,3,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.549826046,435.169875,COMPLETO
+GH029871,Quintay,Central ,AMERB,3,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.549826046,709.9304767,COMPLETO
+GH029871,Quintay,Central ,AMERB,3,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.549826046,16.3207625,COMPLETO
+GH010205,Quintay,Central ,AMERB,8,2021,Chromis crusma,Planktivore,Planctivoro,4,0.500402424,155.5193757,INCOMPLETO
+GH010205,Quintay,Central ,AMERB,8,2021,Sebastes oculatus,General Carnivore ,Carnivoro,1,0.500402424,99.61764535,INCOMPLETO
+GH010201,Quintay,Central ,AMERB,6,2021,Chromis crusma,Planktivore,Planctivoro,1,1.098612289,14.45799559,COMPLETO
+GH010201,Quintay,Central ,AMERB,6,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.098612289,1441.594284,COMPLETO
+GH010201,Quintay,Central ,AMERB,6,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.098612289,6.028391648,COMPLETO
+GH010212,Las Cruces,Central ,AMERB,1,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,1.654066623,1323.681602,COMPLETO
+GH010212,Las Cruces,Central ,AMERB,1,2021,Paralichthys adspersus ,General Carnivore ,Carnivoro,1,1.654066623,1442.216227,COMPLETO
+GH010212,Las Cruces,Central ,AMERB,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.654066623,1272.310246,COMPLETO
+GH010212,Las Cruces,Central ,AMERB,1,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.654066623,6.028391648,COMPLETO
+GH010212,Las Cruces,Central ,AMERB,1,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.654066623,993.888382,COMPLETO
+GH029925,Las Cruces,Central ,AMCP,1,2022,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,3,1.11746286,28.3775458,COMPLETO
+GH029925,Las Cruces,Central ,AMCP,1,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,1.11746286,1097.010676,COMPLETO
+GH029925,Las Cruces,Central ,AMCP,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.11746286,728.2800474,COMPLETO
+GH029925,Las Cruces,Central ,AMCP,1,2022,Chromis crusma,Planktivore,Planctivoro,19,1.11746286,96.26090195,COMPLETO
+GH029925,Las Cruces,Central ,AMCP,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.11746286,1712.096953,COMPLETO
+GH029925,Las Cruces,Central ,AMCP,1,2022,Helcogrammoides chilensis ,Movile invertivore,Carnivoro,1,1.11746286,2.172331851,COMPLETO
+GH019679,Chañaral de Aceituno,Norte Centro,ALA,1,2021,Chromis crusma,Planktivore,Planctivoro,3,1.242453325,172.7197862,COMPLETO
+GH019679,Chañaral de Aceituno,Norte Centro,ALA,1,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.242453325,6.028391648,COMPLETO
+GH019679,Chañaral de Aceituno,Norte Centro,ALA,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.242453325,483.9974283,COMPLETO
+GH019679,Chañaral de Aceituno,Norte Centro,ALA,1,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.242453325,361.7586591,COMPLETO
+GH010188,Chañaral de Aceituno,Norte Centro,ALA,2,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.33217904,771.4147451,COMPLETO
+GH010188,Chañaral de Aceituno,Norte Centro,ALA,2,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.33217904,1272.310246,COMPLETO
+GH010188,Chañaral de Aceituno,Norte Centro,ALA,2,2021,Chromis crusma,Planktivore,Planctivoro,2,1.33217904,77.75968786,COMPLETO
+GH010188,Chañaral de Aceituno,Norte Centro,ALA,2,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.33217904,1987.776764,COMPLETO
+GH010193,Chañaral de Aceituno,Norte Centro,AMCP,1,2021,Chromis crusma,Planktivore,Planctivoro,16,0.932073887,761.9673674,COMPLETO
+GH010193,Chañaral de Aceituno,Norte Centro,AMCP,1,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,0.932073887,661.8408008,COMPLETO
+GH010193,Chañaral de Aceituno,Norte Centro,AMCP,1,2021,Sebastes oculatus,General Carnivore ,Carnivoro,1,0.932073887,343.0951763,COMPLETO
+GH010193,Chañaral de Aceituno,Norte Centro,AMCP,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,0.932073887,845.5468325,COMPLETO
+GH010193,Chañaral de Aceituno,Norte Centro,AMCP,1,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,0.932073887,6.028391648,COMPLETO
+GH010193,Chañaral de Aceituno,Norte Centro,AMCP,1,2021,Auchenionchus spp,General Carnivore ,Carnivoro,1,0.932073887,63.25992955,COMPLETO
+GH019687,Chañaral de Aceituno,Norte Centro,AMCP,2,2021,Chromis crusma,Planktivore,Planctivoro,2,1.844621476,77.75968786,COMPLETO
+GH019687,Chañaral de Aceituno,Norte Centro,AMCP,2,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,3,1.844621476,61.63700262,COMPLETO
+GH019687,Chañaral de Aceituno,Norte Centro,AMCP,2,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.844621476,1712.096953,COMPLETO
+GH019687,Chañaral de Aceituno,Norte Centro,AMCP,2,2021,Hemilutjanus macrophthalmos,General Carnivore,Carnivoro,3,1.844621476,2484.545167,COMPLETO
+GH019687,Chañaral de Aceituno,Norte Centro,AMCP,2,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.844621476,728.2800474,COMPLETO
+GH019687,Chañaral de Aceituno,Norte Centro,AMCP,2,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.844621476,771.4147451,COMPLETO
+GH019687,Chañaral de Aceituno,Norte Centro,AMCP,2,2021,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,1.844621476,2127.239769,COMPLETO
+GH010102,Punta el Yeso,Norte,AMERB,1,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.098612289,8.513155096,COMPLETO
+GH010102,Punta el Yeso,Norte,AMERB,1,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.098612289,354.9652384,COMPLETO
+GH010102,Punta el Yeso,Norte,AMERB,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.098612289,728.2800474,COMPLETO
+GH010124,Punta el Yeso,Norte,AMERB,4,2021,Chromis crusma,Planktivore,Planctivoro,4,0.693147181,125.0724149,COMPLETO
+GH010124,Punta el Yeso,Norte,AMERB,4,2021,NaN,NaN,Carnivoro,0,0,0,COMPLETO
+GH010124,Punta el Yeso,Norte,AMERB,4,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,4,0.693147181,28.4387217,COMPLETO
+GOPR9622,Punta el Yeso,Norte,AMERB,6,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.632630927,568.9092578,COMPLETO
+GOPR9622,Punta el Yeso,Norte,AMERB,6,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,2,1.632630927,44.6819824,COMPLETO
+GOPR9622,Punta el Yeso,Norte,AMERB,6,2021,Auchenionchus spp,General Carnivore ,Carnivoro,1,1.632630927,63.25992955,COMPLETO
+GOPR9622,Punta el Yeso,Norte,AMERB,6,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,3,1.632630927,25.53946529,COMPLETO
+GOPR9622,Punta el Yeso,Norte,AMERB,6,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.632630927,728.2800474,COMPLETO
+GOPR9622,Punta el Yeso,Norte,AMERB,6,2021,Chromis crusma,Planktivore,Planctivoro,4,1.632630927,98.84641955,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,2,1.991346413,43.71236322,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Chromis crusma,Planktivore,Planctivoro,2,1.991346413,49.42320977,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Isacia conceptionis ,Omnivore,Omnivoro,3,1.991346413,879.1760503,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Girella laevifrons,Omnivore ,Omnivoro ,3,1.991346413,1235.344182,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.991346413,728.2800474,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.991346413,34.34061547,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Anisotremus scapularis,Herbivore and Detritivore,Herbivoro,1,1.991346413,566.2270403,COMPLETO
+GH029772,Punta Arenas,Norte,AMERB,1,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.991346413,1712.096953,COMPLETO
+GH019643,Chañaral de Aceituno,Norte Centro,AMCP,3,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,0.996355149,1323.681602,COMPLETO
+GH019643,Chañaral de Aceituno,Norte Centro,AMCP,3,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,0.996355149,1555.01344,COMPLETO
+GH019643,Chañaral de Aceituno,Norte Centro,AMCP,3,2021,Isacia conceptionis ,Omnivore,Omnivoro,16,0.996355149,4583.613351,COMPLETO
+GH019643,Chañaral de Aceituno,Norte Centro,AMCP,3,2021,Chromis crusma,Planktivore,Planctivoro,12,0.996355149,571.4755256,COMPLETO
+GH019644,Chañaral de Aceituno,Norte Centro,AMCP,4,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.782047156,1451.992285,COMPLETO
+GH019644,Chañaral de Aceituno,Norte Centro,AMCP,4,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,3,1.782047156,804.5761572,COMPLETO
+GH019644,Chañaral de Aceituno,Norte Centro,AMCP,4,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,2,1.782047156,36.98873518,COMPLETO
+GH019644,Chañaral de Aceituno,Norte Centro,AMCP,4,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.782047156,568.9092578,COMPLETO
+GH019644,Chañaral de Aceituno,Norte Centro,AMCP,4,2021,Isacia conceptionis ,Omnivore,Omnivoro,4,1.782047156,2136.274116,COMPLETO
+GH019644,Chañaral de Aceituno,Norte Centro,AMCP,4,2021,Chromis crusma,Planktivore,Planctivoro,6,1.782047156,233.2790636,COMPLETO
+GH019644,Chañaral de Aceituno,Norte Centro,AMCP,4,2021,Hemilutjanus macrophthalmos,General Carnivore,Carnivoro,1,1.782047156,553.3373191,COMPLETO
+GOPR9700,Cobquecura,Sur Centro,AMERB,2,2022,Prolatilus jugularis,General Carnivore ,Carnivoro,2,1.277034259,442.6136117,COMPLETO
+GOPR9700,Cobquecura,Sur Centro,AMERB,2,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.277034259,2184.840142,COMPLETO
+GOPR9700,Cobquecura,Sur Centro,AMERB,2,2022,Congiopodus peruvianus,Movile invertivore,Carnivoro,1,1.277034259,135.1941211,COMPLETO
+GOPR9700,Cobquecura,Sur Centro,AMERB,2,2022,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.277034259,20.01850249,COMPLETO
+GOPR9706,Cobquecura,Sur Centro,AMERB,5,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.475076311,1721.128788,COMPLETO
+GOPR9706,Cobquecura,Sur Centro,AMERB,5,2022,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.475076311,28.99547761,COMPLETO
+GOPR9706,Cobquecura,Sur Centro,AMERB,5,2022,Schroederichthys chilensis,Movile invertivore,Carnivoro,1,1.475076311,255.5300028,COMPLETO
+GOPR9706,Cobquecura,Sur Centro,AMERB,5,2022,Chromis crusma,Planktivore,Planctivoro,1,1.475076311,38.87984393,COMPLETO
+GOPR9706,Cobquecura,Sur Centro,AMERB,5,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.475076311,435.169875,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Girella laevifrons,Omnivore ,Omnivoro ,1,1.840340796,411.7813942,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,4,1.840340796,3424.193907,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Semicossyphus darwini ,General Carnivore ,Carnivoro,2,1.840340796,4254.479539,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Chromis crusma,Planktivore,Planctivoro,3,1.840340796,116.6395318,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.840340796,20.01850249,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.840340796,908.6744408,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.840340796,787.3332766,COMPLETO
+GH029775,Punta Arenas,Norte,AMERB,2,2021,Isacia conceptionis ,Omnivore,Omnivoro,6,1.840340796,1718.855007,COMPLETO
+GH019767,Pisagua,Norte,AMERB,1,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.735126457,709.9304767,COMPLETO
+GH019767,Pisagua,Norte,AMERB,1,2021,Chromis crusma,Planktivore,Planctivoro,2,1.735126457,49.42320977,COMPLETO
+GH019767,Pisagua,Norte,AMERB,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.735126457,483.9974283,COMPLETO
+GH019767,Pisagua,Norte,AMERB,1,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,2,1.735126457,1574.666553,COMPLETO
+GH019767,Pisagua,Norte,AMERB,1,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.735126457,23.51782819,COMPLETO
+GH019767,Pisagua,Norte,AMERB,1,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.735126457,24.23240998,COMPLETO
+GH029768,Pisagua,Norte,AMERB,3,2021,Paralabrax humeralis ,General Carnivore ,Herbivoro,0,0,0,COMPLETO
+GH029768,Pisagua,Norte,AMERB,3,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.314373843,1127.648641,COMPLETO
+GH029768,Pisagua,Norte,AMERB,3,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,3,1.314373843,1706.727773,COMPLETO
+GH029768,Pisagua,Norte,AMERB,3,2021,Chromis crusma,Planktivore,Planctivoro,6,1.314373843,233.2790636,COMPLETO
+GH029768,Pisagua,Norte,AMERB,3,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.314373843,1272.310246,COMPLETO
+GH029768,Pisagua,Norte,AMERB,3,2021,Isacia conceptionis ,Omnivore,Omnivoro,1,1.314373843,452.8141173,COMPLETO
+GP019620,Pisagua,Norte,AMERB,4,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.329661349,1456.560095,COMPLETO
+GP019620,Pisagua,Norte,AMERB,4,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.329661349,709.9304767,COMPLETO
+GP019620,Pisagua,Norte,AMERB,4,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.329661349,50.23582178,COMPLETO
+GP019620,Pisagua,Norte,AMERB,4,2021,Isacia conceptionis ,Omnivore,Omnivoro,1,1.329661349,286.4758345,COMPLETO
+GH010082,Pisagua,Norte,AMERB,5,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.594166699,1464.120683,COMPLETO
+GH010082,Pisagua,Norte,AMERB,5,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,4,1.594166699,2058.784097,COMPLETO
+GH010082,Pisagua,Norte,AMERB,5,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.594166699,50.23582178,COMPLETO
+GH010082,Pisagua,Norte,AMERB,5,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.594166699,570.9502416,COMPLETO
+GH010082,Pisagua,Norte,AMERB,5,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.594166699,34.34061547,COMPLETO
+GH010082,Pisagua,Norte,AMERB,5,2021,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.594166699,535.250019,COMPLETO
+GH019769,Pisagua,Norte,AMERB,6,2021,Chromis crusma,Planktivore,Planctivoro,5,1.666453003,123.5580244,COMPLETO
+GH019769,Pisagua,Norte,AMERB,6,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,5,1.666453003,6437.898195,COMPLETO
+GH019769,Pisagua,Norte,AMERB,6,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,2,1.666453003,34.57377691,COMPLETO
+GH019769,Pisagua,Norte,AMERB,6,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.666453003,483.9974283,COMPLETO
+GH019769,Pisagua,Norte,AMERB,6,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,6,1.666453003,66.08360367,COMPLETO
+GH019769,Pisagua,Norte,AMERB,6,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,5,1.666453003,4280.242384,COMPLETO
+GH019771,Pisagua,Norte,AMERB,7,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,4,1.632630927,3424.193907,COMPLETO
+GH019771,Pisagua,Norte,AMERB,7,2021,Paralabrax humeralis ,General Carnivore ,Carnivoro,2,1.632630927,1052.615183,COMPLETO
+GH019771,Pisagua,Norte,AMERB,7,2021,Chromis crusma,Planktivore,Planctivoro,3,1.632630927,116.6395318,COMPLETO
+GH019771,Pisagua,Norte,AMERB,7,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.632630927,728.2800474,COMPLETO
+GH019771,Pisagua,Norte,AMERB,7,2021,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.632630927,24.23240998,COMPLETO
+GH019771,Pisagua,Norte,AMERB,7,2021,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.632630927,23.51782819,COMPLETO
+GOPR9703,Cobquecura,Sur Centro,AMERB,7,2022,Scartichthys viridis ,Herbivore and Detritivore,Herbivoro,1,1.242453325,30.26080163,COMPLETO
+GOPR9703,Cobquecura,Sur Centro,AMERB,7,2022,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.242453325,355.2396342,COMPLETO
+GOPR9703,Cobquecura,Sur Centro,AMERB,7,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.242453325,2184.840142,COMPLETO
+GOPR9703,Cobquecura,Sur Centro,AMERB,7,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.242453325,661.8408008,COMPLETO
+GH020003,Carrizal Bajo,Norte Centro,AMERB,1,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.641734712,NaN,INCOMPLETO
+GH020003,Carrizal Bajo,Norte Centro,AMERB,1,2021,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.69798461,NaN,INCOMPLETO
+GH020003,Carrizal Bajo,Norte Centro,AMERB,1,2021,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,1.778620709,NaN,INCOMPLETO
+GH020003,Carrizal Bajo,Norte Centro,AMERB,1,2021,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.859256808,NaN,INCOMPLETO
+GH020003,Carrizal Bajo,Norte Centro,AMERB,1,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.847929187,NaN,INCOMPLETO
+GH020003,Carrizal Bajo,Norte Centro,AMERB,1,2021,Chromis crusma,Planktivore,Planctivoro,4,1.928565286,NaN,INCOMPLETO
+GH010004,Carrizal Bajo,Norte Centro,AMERB,5,2021,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.560710409,NaN,INCOMPLETO
+GH010004,Carrizal Bajo,Norte Centro,AMERB,5,2021,Semicossyphus darwini ,Benthic Carnivore,Carnivoro,1,1.560710409,NaN,INCOMPLETO
+GH010004,Carrizal Bajo,Norte Centro,AMERB,5,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.560710409,NaN,INCOMPLETO
+GH010004,Carrizal Bajo,Norte Centro,AMERB,5,2021,Sebastes oculatus,Benthic Carnivore,Carnivoro,1,1.560710409,NaN,INCOMPLETO
+GH010004,Carrizal Bajo,Norte Centro,AMERB,5,2021,Chromis crusma,Planktivore,Planctivoro,1,1.560710409,NaN,INCOMPLETO
+GH010007,Carrizal Bajo,Norte Centro,AMERB,9,2021,Chromis crusma,Planktivore,Planctivoro,13,0.790234755,NaN,INCOMPLETO
+GH010007,Carrizal Bajo,Norte Centro,AMERB,9,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,0.790234755,NaN,INCOMPLETO
+GH010007,Carrizal Bajo,Norte Centro,AMERB,9,2021,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,0.790234755,NaN,INCOMPLETO
+GH010007,Carrizal Bajo,Norte Centro,AMERB,9,2021,Paralabrax humeralis ,Benthic Carnivore,Carnivoro,1,0.790234755,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,2.019814992,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,2.019814992,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Semicossyphus darwini ,Benthic Carnivore,Carnivoro,1,2.019814992,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Sebastes oculatus,Benthic Carnivore,Carnivoro,1,2.019814992,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Hemilutjanus macrophthalmos,Benthic Carnivore,Carnivoro,1,2.019814992,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Paralabrax humeralis ,Benthic Carnivore,Carnivoro,1,2.019814992,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Isacia conceptionis ,Benthic Omnivore,Omnivoro ,1,2.019814992,NaN,INCOMPLETO
+GOPR0006,Carrizal Bajo,Norte Centro,AMERB,10,2021,Pinguipes chilensis,General Carnivore ,Carnivoro,2,2.019814992,NaN,INCOMPLETO
+GOPR9432,Los Vilos,Central ,AMERB,1,2020,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.279854226,NaN,INCOMPLETO
+GOPR9432,Los Vilos,Central ,AMERB,1,2020,Chromis crusma,Planktivore,Planctivoro,4,1.279854226,NaN,INCOMPLETO
+GOPR9432,Los Vilos,Central ,AMERB,1,2020,Sebastes oculatus,General Carnivore ,Carnivoro,1,1.279854226,NaN,INCOMPLETO
+GOPR9432,Los Vilos,Central ,AMERB,1,2020,Scartichthys viridis,Benthic Omnivore,Herbivoro,3,1.279854226,NaN,INCOMPLETO
+GOPR9434,Los Vilos,Central ,AMERB ,2,2020,Sebastes oculatus,Benthic Carnivore,Carnivoro,2,1.329661349,NaN,INCOMPLETO
+GOPR9434,Los Vilos,Central ,AMERB ,2,2020,Chromis crusma,Planktivore,Planctivoro,1,1.329661349,NaN,INCOMPLETO
+GOPR9434,Los Vilos,Central ,AMERB ,2,2020,Pinguipes chilensis,Benthic Carnivore,Carnivoro,2,1.329661349,NaN,INCOMPLETO
+GOPR9434,Los Vilos,Central ,AMERB ,2,2020,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.329661349,NaN,INCOMPLETO
+GP019429,Los Vilos,Central ,AMERB ,3,2020,Pinguipes chilensis,Benthic Carnivore,Carnivoro,2,1.351783994,NaN,INCOMPLETO
+GP019429,Los Vilos,Central ,AMERB ,3,2020,Sebastes oculatus,Benthic Carnivore,Carnivoro,2,1.351783994,NaN,INCOMPLETO
+GP019429,Los Vilos,Central ,AMERB ,3,2020,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.351783994,NaN,INCOMPLETO
+GP019429,Los Vilos,Central ,AMERB ,3,2020,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.351783994,NaN,INCOMPLETO
+GOPR9431,Los Vilos,Central ,AMERB,4,2020,Sebastes oculatus,Benthic Carnivore,Carnivoro,1,0.636514168,NaN,INCOMPLETO
+GOPR9431,Los Vilos,Central ,AMERB,4,2020,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,0.636514168,NaN,INCOMPLETO
+GOPR9430,Los Vilos,Central ,AMERB,5,2020,Pinguipes chilensis,Benthic Carnivore,Carnivoro,2,1.549826046,NaN,INCOMPLETO
+GOPR9430,Los Vilos,Central ,AMERB,5,2020,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.549826046,NaN,INCOMPLETO
+GOPR9430,Los Vilos,Central ,AMERB,5,2020,Chromis crusma,Planktivore,Planctivoro,1,1.549826046,NaN,INCOMPLETO
+GOPR9430,Los Vilos,Central ,AMERB,5,2020,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.549826046,NaN,INCOMPLETO
+GOPR9430,Los Vilos,Central ,AMERB,5,2020,Sebastes oculatus,Benthic Carnivore,Carnivoro,1,1.549826046,NaN,INCOMPLETO
+GH010119,Las Cruces,Central ,AMERB,2,2021,Scartichthys viridis,Benthic Omnivore,Herbivoro,3,0.693147181,49.79383276,COMPLETO
+GH010119,Las Cruces,Central ,AMERB,2,2021,Pinguipes chilensis,Benthic Carnivore,Carnivoro,3,0.693147181,1451.992285,COMPLETO
+GH019767B,Pisagua,Norte,AMERB,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.33217904,709.9304767,COMPLETO
+GH019767B,Pisagua,Norte,AMERB,1,2022,Chromis crusma,Planktivore,Planctivoro,1,1.33217904,38.87984393,COMPLETO
+GH019767B,Pisagua,Norte,AMERB,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.33217904,1044.299645,COMPLETO
+GH019767B,Pisagua,Norte,AMERB,1,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.33217904,8.513155096,COMPLETO
+GH019766,Pisagua,Norte,AMERB,2,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.329661349,709.9304767,COMPLETO
+GH019766,Pisagua,Norte,AMERB,2,2022,Pinguipes chilensis,Benthic Carnivore,Carnivoro,2,1.329661349,1212.277476,COMPLETO
+GH019766,Pisagua,Norte,AMERB,2,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.329661349,18.80180177,COMPLETO
+GH019766,Pisagua,Norte,AMERB,2,2022,Paralabrax humeralis ,Benthic Carnivore,Carnivoro,1,1.329661349,787.3332766,COMPLETO
+GH010046,Pisagua,Norte,AMERB,7,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,0,354.9652384,COMPLETO
+GH010046,Pisagua,Norte,AMERB,7,2022,NaN,NaN,Herbivoro,0,0,0,COMPLETO
+GH010052,Carrizal Bajo,Norte Centro,AMERB,1,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.039720771,23.51782819,COMPLETO
+GH010052,Carrizal Bajo,Norte Centro,AMERB,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.039720771,709.9304767,COMPLETO
+GH010052,Carrizal Bajo,Norte Centro,AMERB,1,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.039720771,435.169875,COMPLETO
+GH010053,Carrizal Bajo,Norte Centro,AMERB,3,2022,Chromis crusma,Planktivore,Planctivoro,8,1.252762968,380.9836837,COMPLETO
+GH010053,Carrizal Bajo,Norte Centro,AMERB,3,2022,Pinguipes chilensis,Benthic Carnivore,Carnivoro,1,1.252762968,301.985352,COMPLETO
+GH010053,Carrizal Bajo,Norte Centro,AMERB,3,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.252762968,406.3695963,COMPLETO
+GH010053,Carrizal Bajo,Norte Centro,AMERB,3,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,2,1.252762968,37.47899646,COMPLETO
+GH010053,Carrizal Bajo,Norte Centro,AMERB,3,2022,Auchenionchus variolosus,General Carnivore ,Carnivoro,1,1.252762968,63.25992955,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,Chromis crusma,Planktivore,Planctivoro,4,1.846889123,190.4918419,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,4,1.846889123,1419.860953,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.846889123,42.27136657,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.846889123,442.9149346,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.846889123,435.169875,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,Girella laevifrons,Omnivore,Omnivoro,1,1.846889123,411.7813942,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.846889123,523.9419462,COMPLETO
+GH010049,Punta Arenas,Norte,AMERB,1,2022,unknown : sarco de la pena,,,1,1.846889123,0,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Chromis crusma,Planktivore,Planctivoro,2,2.007556307,95.24592093,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,3,2.007556307,1064.895715,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,2,2.007556307,73.75364997,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,2,2.007556307,676.4755906,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,2.007556307,536.3841048,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Girella laevifrons,Omnivore,Omnivoro,1,2.007556307,411.7813942,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,2.007556307,437.8679424,COMPLETO
+GH010048,Punta Arenas,Norte,AMERB,4,2022,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,2.007556307,1224.326552,COMPLETO
+GH019815,Punta Arenas,Norte,AMERB,5,2022,Chromis crusma,Planktivore,Planctivoro,5,1.608690738,194.3992197,COMPLETO
+GH019815,Punta Arenas,Norte,AMERB,5,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,10,1.608690738,3549.652384,COMPLETO
+GH019815,Punta Arenas,Norte,AMERB,5,2022,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,1.608690738,622.6728484,COMPLETO
+GH019815,Punta Arenas,Norte,AMERB,5,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.608690738,1582.711454,COMPLETO
+GH019815,Punta Arenas,Norte,AMERB,5,2022,Girella laevifrons,Omnivore,Omnivoro,1,1.608690738,333.180537,COMPLETO
+GH019815,Punta Arenas,Norte,AMERB,5,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,3,1.608690738,1712.850725,COMPLETO
+GH019815,Punta Arenas,Norte,AMERB,5,2022,Isacia conceptionis ,Omnivore,Omnivoro,1,1.608690738,166.6938942,COMPLETO
+GH019814,Punta Arenas,Norte,AMERB,7,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.560710409,483.9974283,COMPLETO
+GH019814,Punta Arenas,Norte,AMERB,7,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.560710409,923.8744962,COMPLETO
+GH019814,Punta Arenas,Norte,AMERB,7,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.560710409,661.8408008,COMPLETO
+GH019814,Punta Arenas,Norte,AMERB,7,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.560710409,523.9419462,COMPLETO
+GH019814,Punta Arenas,Norte,AMERB,7,2022,Girella laevifrons,Omnivore,Omnivoro,1,1.560710409,411.7813942,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,2,1.916340327,875.7358847,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Isacia conceptionis ,Omnivore,Omnivoro,1,1.916340327,286.4758345,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.916340327,728.2800474,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,3,1.916340327,1706.727773,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.916340327,435.169875,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Girella laevifrons,Omnivore,Omnivoro,9,1.916340327,5948.889106,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,2,1.916340327,85.4350299,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,1.916340327,889.7173748,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Chromis crusma,Planktivore,Planctivoro,1,1.916340327,24.71160489,COMPLETO
+GH019813,Punta Arenas,Norte,AMERB,8,2022,Seriolella violacea,General Carnivore ,Carnivoro,1,1.916340327,272.9402602,COMPLETO
+GH010050,Punta el Yeso,Norte,AMERB,1,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,3,1.277034259,36.34745731,COMPLETO
+GH010050,Punta el Yeso,Norte,AMERB,1,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.277034259,268.1920524,COMPLETO
+GH010050,Punta el Yeso,Norte,AMERB,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.277034259,709.9304767,COMPLETO
+GH010050,Punta el Yeso,Norte,AMERB,1,2022,Chromis crusma,Planktivore,Planctivoro,1,1.277034259,24.71160489,COMPLETO
+GH019840,Punta el Yeso,Norte,AMERB,2,2022,Chromis crusma,Planktivore,Planctivoro,2,1.735126457,49.42320977,COMPLETO
+GH019840,Punta el Yeso,Norte,AMERB,2,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.735126457,523.9419462,COMPLETO
+GH019840,Punta el Yeso,Norte,AMERB,2,2022,Isacia conceptionis ,Omnivore,Omnivoro,1,1.735126457,380.2106416,COMPLETO
+GH019840,Punta el Yeso,Norte,AMERB,2,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,2,1.735126457,19.10379787,COMPLETO
+GH019840,Punta el Yeso,Norte,AMERB,2,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.735126457,435.169875,COMPLETO
+GH019840,Punta el Yeso,Norte,AMERB,2,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.735126457,1001.377,COMPLETO
+GH010051,Punta el Yeso,Norte,AMERB,4,2022,Chromis crusma,Planktivore,Planctivoro,6,1.529248293,285.7377628,COMPLETO
+GH010051,Punta el Yeso,Norte,AMERB,4,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,4,1.529248293,1419.860953,COMPLETO
+GH010051,Punta el Yeso,Norte,AMERB,4,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,2,1.529248293,77.47057469,COMPLETO
+GH010051,Punta el Yeso,Norte,AMERB,4,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.529248293,728.2800474,COMPLETO
+GH010051,Punta el Yeso,Norte,AMERB,4,2022,Isacia conceptionis ,Omnivore,Omnivoro,1,1.529248293,166.6938942,COMPLETO
+GH010051,Punta el Yeso,Norte,AMERB,4,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.529248293,327.4126543,COMPLETO
+GH019845,Carrizal Bajo,Norte Centro,AMERB,7,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,1.559581156,1097.010676,COMPLETO
+GH019845,Carrizal Bajo,Norte Centro,AMERB,7,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.559581156,23.51782819,COMPLETO
+GH019845,Carrizal Bajo,Norte Centro,AMERB,7,2022,Chromis crusma,Planktivore,Planctivoro,2,1.559581156,77.75968786,COMPLETO
+GH019845,Carrizal Bajo,Norte Centro,AMERB,7,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.559581156,967.9948566,COMPLETO
+GH019845,Carrizal Bajo,Norte Centro,AMERB,7,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.559581156,568.9092578,COMPLETO
+GH019844,Carrizal Bajo,Norte Centro,AMERB,8,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.473502385,728.2800474,COMPLETO
+GH019844,Carrizal Bajo,Norte Centro,AMERB,8,2022,Chromis crusma,Planktivore,Planctivoro,6,1.473502385,285.7377628,COMPLETO
+GH019844,Carrizal Bajo,Norte Centro,AMERB,8,2022,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,1.473502385,1224.326552,COMPLETO
+GH019844,Carrizal Bajo,Norte Centro,AMERB,8,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.473502385,435.169875,COMPLETO
+GH019844,Carrizal Bajo,Norte Centro,AMERB,8,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.473502385,1137.818516,COMPLETO
+GH019844,Carrizal Bajo,Norte Centro,AMERB,8,2022,Hemilutjanus macrophthalmos,Benthic Carnivore,Carnivoro,1,1.473502385,347.3846762,COMPLETO
+GH019843,Carrizal Bajo,Norte Centro,AMERB,10,2022,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,1.791759469,889.7173748,COMPLETO
+GH019843,Carrizal Bajo,Norte Centro,AMERB,10,2022,Chromis crusma,Planktivore,Planctivoro,1,1.791759469,38.87984393,COMPLETO
+GH019843,Carrizal Bajo,Norte Centro,AMERB,10,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.791759469,568.9092578,COMPLETO
+GH019843,Carrizal Bajo,Norte Centro,AMERB,10,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.791759469,14.7644716,COMPLETO
+GH019843,Carrizal Bajo,Norte Centro,AMERB,10,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.791759469,518.1298076,COMPLETO
+GH019843,Carrizal Bajo,Norte Centro,AMERB,10,2022,Auchenionchus variolosus,General Carnivore ,Carnivoro,1,1.791759469,87.32661478,COMPLETO
+GH019764,Punta de Tralca,Central ,ALA,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,0.950270539,1940.557523,COMPLETO
+GH019764,Punta de Tralca,Central ,ALA,1,2022,Prolatilus jugularis,General Carnivore ,Carnivoro,1,0.950270539,126.446946,COMPLETO
+GH019764,Punta de Tralca,Central ,ALA,1,2022,Schroederichthys chilensis,Movile invertivore,Carnivoro,1,0.950270539,559.7223441,COMPLETO
+GH019765,Punta de Tralca,Central ,ALA,2,2022,NaN,NaN,Herbivoro,0,0,0,COMPLETO
+GH019765,Punta de Tralca,Central ,ALA,2,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,0,1451.992285,COMPLETO
+GH010059,Chañaral de Aceituno,Norte Centro,AMCP,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,0.95148796,34.46248377,COMPLETO
+GH010059,Chañaral de Aceituno,Norte Centro,AMCP,1,2022,Chromis crusma,Planktivore,Planctivoro,12,0.95148796,466.5581272,COMPLETO
+GH010059,Chañaral de Aceituno,Norte Centro,AMCP,1,2022,Semicossyphus darwini ,General Carnivore ,Carnivoro,1,0.95148796,622.6728484,COMPLETO
+GH010059,Chañaral de Aceituno,Norte Centro,AMCP,1,2022,NaN,NaN,Herbivoro,0,0,0,COMPLETO
+GH010059,Chañaral de Aceituno,Norte Centro,AMCP,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,5,0.95148796,1222.555035,COMPLETO
+GH019853,Chañaral de Aceituno,Norte Centro,AMCP,2,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.494175138,656.54792,COMPLETO
+GH019853,Chañaral de Aceituno,Norte Centro,AMCP,2,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.494175138,406.3695963,COMPLETO
+GH019853,Chañaral de Aceituno,Norte Centro,AMCP,2,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.494175138,3.11420947,COMPLETO
+GH019853,Chañaral de Aceituno,Norte Centro,AMCP,2,2022,Scartichthys gigas ,Herbivore and Detritivore,Herbivoro,1,1.494175138,14.7644716,COMPLETO
+GH019853,Chañaral de Aceituno,Norte Centro,AMCP,2,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.494175138,215.9540645,COMPLETO
+GH019855,Chañaral de Aceituno,Norte Centro,AMCP,3,2022,Chromis crusma,Planktivore,Planctivoro,6,1.088899975,86.74797356,COMPLETO
+GH019855,Chañaral de Aceituno,Norte Centro,AMCP,3,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.088899975,603.9707041,COMPLETO
+GH019855,Chañaral de Aceituno,Norte Centro,AMCP,3,2022,Sebastes oculatus,General Carnivore ,Carnivoro,1,1.088899975,99.61764535,COMPLETO
+GH019855,Chañaral de Aceituno,Norte Centro,AMCP,3,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.088899975,1.32901279,COMPLETO
+GH020058,Chañaral de Aceituno,Norte Centro,AMCP,4,2022,Paralabrax humeralis ,General Carnivore ,Carnivoro,2,2.017630117,654.8253086,COMPLETO
+GH020058,Chañaral de Aceituno,Norte Centro,AMCP,4,2022,Hemilutjanus macrophthalmos,General Carnivore ,Carnivoro,1,2.017630117,177.0689523,COMPLETO
+GH020058,Chañaral de Aceituno,Norte Centro,AMCP,4,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,2.017630117,574.8153498,COMPLETO
+GH020058,Chañaral de Aceituno,Norte Centro,AMCP,4,2022,Semicossyphus darwini ,Benthic Carnivore,Carnivoro,1,2.017630117,622.6728484,COMPLETO
+GH020058,Chañaral de Aceituno,Norte Centro,AMCP,4,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,2.017630117,32.64152501,COMPLETO
+GH020058,Chañaral de Aceituno,Norte Centro,AMCP,4,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,2.017630117,771.4147451,COMPLETO
+GH020058,Chañaral de Aceituno,Norte Centro,AMCP,4,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,2.017630117,905.9560561,COMPLETO
+GH020705,Las Cruces,Central ,AMERB,1,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.720193459,2184.840142,COMPLETO
+GH020705,Las Cruces,Central ,AMERB,1,2023,Bovichtus chilensis,Movile invertivore,Carnivoro,1,1.720193459,44.61282187,COMPLETO
+GH020705,Las Cruces,Central ,AMERB,1,2023,Chromis crusma,Planktivore,Planctivoro,2,1.720193459,95.24592093,COMPLETO
+GH020705,Las Cruces,Central ,AMERB,1,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.720193459,856.0484767,COMPLETO
+GH020705,Las Cruces,Central ,AMERB,1,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.720193459,13.4555764,COMPLETO
+GH020705,Las Cruces,Central ,AMERB,1,2023,Calliclinus geniguttatus,General Carnivore ,Carnivoro,2,1.720193459,74.11141888,COMPLETO
+GH010366,Las Cruces,Central ,AMERB,2,2023,Chromis crusma,Planktivore,Planctivoro,8,1.351783994,380.9836837,COMPLETO
+GH010366,Las Cruces,Central ,AMERB,2,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.351783994,1456.560095,COMPLETO
+GH010366,Las Cruces,Central ,AMERB,2,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.351783994,34.34061547,COMPLETO
+GH010366,Las Cruces,Central ,AMERB,2,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.351783994,568.9092578,COMPLETO
+GH010366,Las Cruces,Central ,AMERB,2,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.351783994,328.4400397,COMPLETO
+GH010366,Las Cruces,Central ,AMERB,2,2023,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.351783994,221.3068058,COMPLETO
+GX010367,Chañaral de Aceituno,Norte Centro,ALA,3,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.098612289,203.1847982,COMPLETO
+GX010367,Chañaral de Aceituno,Norte Centro,ALA,3,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.098612289,268.1920524,COMPLETO
+GX010367,Chañaral de Aceituno,Norte Centro,ALA,3,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.098612289,483.9974283,COMPLETO
+GX010368,Chañaral de Aceituno,Norte Centro,ALA,5,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,0.693147181,354.9652384,COMPLETO
+GX010368,Chañaral de Aceituno,Norte Centro,ALA,5,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,0.693147181,16.3207625,COMPLETO
+GH010068,Chañaral de Aceituno,Norte Centro,AMERB,1,2022,Chromis crusma,Planktivore,Planctivoro,7,1.234267866,35.46454282,COMPLETO
+GH010068,Chañaral de Aceituno,Norte Centro,AMERB,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.234267866,354.9652384,COMPLETO
+GH010068,Chañaral de Aceituno,Norte Centro,AMERB,1,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.234267866,268.1920524,COMPLETO
+GH010068,Chañaral de Aceituno,Norte Centro,AMERB,1,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.234267866,68.68123095,COMPLETO
+GH010068,Chañaral de Aceituno,Norte Centro,AMERB,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.234267866,483.9974283,COMPLETO
+GH010067,Chañaral de Aceituno,Norte Centro,AMERB,2,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.039720771,10.34136693,COMPLETO
+GH010067,Chañaral de Aceituno,Norte Centro,AMERB,2,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.039720771,301.985352,COMPLETO
+GH010067,Chañaral de Aceituno,Norte Centro,AMERB,2,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.039720771,321.8701586,COMPLETO
+GH010066,Chañaral de Aceituno,Norte Centro,AMERB,4,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.732867951,474.8440609,COMPLETO
+GH010066,Chañaral de Aceituno,Norte Centro,AMERB,4,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.732867951,255.0411467,COMPLETO
+GH010066,Chañaral de Aceituno,Norte Centro,AMERB,4,2022,Chromis crusma,Planktivore,Planctivoro,1,1.732867951,7.502269306,COMPLETO
+GH010066,Chañaral de Aceituno,Norte Centro,AMERB,4,2022,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.732867951,97.88969482,COMPLETO
+GH010066,Chañaral de Aceituno,Norte Centro,AMERB,4,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.732867951,215.9540645,COMPLETO
+GH010066,Chañaral de Aceituno,Norte Centro,AMERB,4,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.732867951,3.11420947,COMPLETO
+GX010373,Chañaral de Aceituno,Norte Centro,AMERB,5,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,0.636514168,102.6470735,COMPLETO
+GX010373,Chañaral de Aceituno,Norte Centro,AMERB,5,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,0.636514168,37.45482494,COMPLETO
+GX010369,Chañaral de Aceituno,Norte Centro,AMERB,10,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.522955068,62.42642788,COMPLETO
+GX010369,Chañaral de Aceituno,Norte Centro,AMERB,10,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.522955068,489.022014,COMPLETO
+GX010369,Chañaral de Aceituno,Norte Centro,AMERB,10,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,3,1.522955068,12.25681059,COMPLETO
+GX010369,Chañaral de Aceituno,Norte Centro,AMERB,10,2022,Chromis crusma,Planktivore,Planctivoro,1,1.522955068,7.502269306,COMPLETO
+GX010369,Chañaral de Aceituno,Norte Centro,AMERB,10,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,1.522955068,401.2829834,COMPLETO
+GH010698,Las Cruces,Central ,AMERB,3,2023,NaN,NaN,NaN,NaN,NaN,NaN,INCOMPLETO
+GH019708,Ventanas,Central,AMERB,1,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,0.95052291,2.097450199,COMPLETO
+GH019708,Ventanas,Central,AMERB,1,2022,Isacia conceptionis ,Omnivore,Omnivoro,18,0.95052291,1582.107757,COMPLETO
+GH019708,Ventanas,Central,AMERB,1,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,0.95052291,151.2922882,COMPLETO
+GH019708,Ventanas,Central,AMERB,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,0.95052291,1824.480413,COMPLETO
+GH019708,Ventanas,Central,AMERB,1,2022,Chromis crusma,Planktivore,Planctivoro,2,0.95052291,15.00453861,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Isacia conceptionis ,Omnivore,Omnivoro,7,1.751926411,615.2641278,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.751926411,574.8153498,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Chromis crusma,Planktivore,Planctivoro,1,1.751926411,24.71160489,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Schroederichthys chilensis,Movile invertivore,Carnivoro,1,1.751926411,777.5637666,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.751926411,30.26080163,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,6,1.751926411,2207.521908,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.751926411,215.9540645,COMPLETO
+GX010363,Chañaral de Aceituno,Norte Centro,ALA,1,2022,Paralichthys adspersus,General Carnivore ,Carnivoro,1,1.751926411,1108.153474,COMPLETO
+GX010364,Chañaral de Aceituno,Norte Centro,ALA,2,2022,Chromis crusma,Planktivore,Planctivoro,1,1.459025717,24.71160489,COMPLETO
+GX010364,Chañaral de Aceituno,Norte Centro,ALA,2,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.459025717,771.4147451,COMPLETO
+GX010364,Chañaral de Aceituno,Norte Centro,ALA,2,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.459025717,354.9652384,COMPLETO
+GX010364,Chañaral de Aceituno,Norte Centro,ALA,2,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.459025717,905.9560561,COMPLETO
+GX010364,Chañaral de Aceituno,Norte Centro,ALA,2,2022,Sebastes oculatus,General Carnivore ,Carnivoro,4,1.459025717,2196.151579,COMPLETO
+GH010680,El Canelo,Central,ALA,1,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,0.955699891,635.8432245,COMPLETO
+GH010680,El Canelo,Central,ALA,1,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,0.955699891,215.9540645,COMPLETO
+GH010680,El Canelo,Central,ALA,1,2023,Chromis crusma,Planktivore,Planctivoro,4,0.955699891,70.63664789,COMPLETO
+GH010368,Las Cruces,Central,AMCP,1,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.288252305,1137.818516,COMPLETO
+GH010368,Las Cruces,Central,AMCP,1,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,5,1.288252305,141.5847026,COMPLETO
+GH010368,Las Cruces,Central,AMCP,1,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,1.288252305,1126.77098,COMPLETO
+GH010368,Las Cruces,Central,AMCP,1,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.288252305,815.6066622,COMPLETO
+GH020145,Las Cruces,Central,ALA,1,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.560710409,744.9002866,COMPLETO
+GH020145,Las Cruces,Central,ALA,1,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.560710409,328.4400397,COMPLETO
+GH020145,Las Cruces,Central,ALA,1,2023,Chromis crusma,Planktivore,Planctivoro,1,1.560710409,38.87984393,COMPLETO
+GH020145,Las Cruces,Central,ALA,1,2023,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.560710409,142.6266548,COMPLETO
+GH020145,Las Cruces,Central,ALA,1,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.560710409,34.34061547,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,6,1.741223765,3123.715855,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,8,1.741223765,5826.240379,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.741223765,34.34061547,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,2,1.741223765,1168.724258,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Graus nigra,Movile invertivore,Carnivoro,1,1.741223765,3950.219799,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Paralabrax humeralis ,General Carnivore ,Carnivoro,1,1.741223765,1052.94648,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Prolatilus jugularis,General Carnivore ,Carnivoro,1,1.741223765,32.12779091,COMPLETO
+GH010700,Las Cruces,Central,ALA,2,2023,Chromis crusma,Planktivore,Planctivoro,3,1.741223765,74.13481466,COMPLETO
+GH010681,Los Vilos,Central,AMERB,2,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.386294361,367.920318,COMPLETO
+GH010681,Los Vilos,Central,AMERB,2,2023,Helcogrammoides chilensis ,Movile invertivore,Carnivoro,1,1.386294361,0.911194701,COMPLETO
+GH010681,Los Vilos,Central,AMERB,2,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.386294361,6.028391648,COMPLETO
+GH010681,Los Vilos,Central,AMERB,2,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.386294361,661.8408008,COMPLETO
+GOPR0001,Los Vilos,Central,AMERB,3,2023,Chromis crusma,Planktivore,Planctivoro,4,1.265856752,98.84641955,COMPLETO
+GOPR0001,Los Vilos,Central,AMERB,3,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.265856752,1398.185717,COMPLETO
+GOPR0001,Los Vilos,Central,AMERB,3,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.265856752,432.4677423,COMPLETO
+GOPR0001,Los Vilos,Central,AMERB,3,2023,Isacia conceptionis ,Omnivore,Omnivoro,5,1.265856752,833.4694709,COMPLETO
+GP010128,Los Vilos,Central,AMERB,4,2023,Chromis crusma,Planktivore,Planctivoro,5,0.598269589,123.5580244,COMPLETO
+GP010128,Los Vilos,Central,AMERB,4,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,0.598269589,68.68123095,COMPLETO
+GOPR0006,Los Vilos,Central,AMERB,5,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.33217904,603.9707041,COMPLETO
+GOPR0006,Los Vilos,Central,AMERB,5,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.33217904,354.9652384,COMPLETO
+GOPR0006,Los Vilos,Central,AMERB,5,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.33217904,328.4400397,COMPLETO
+GOPR0006,Los Vilos,Central,AMERB,5,2023,Chromis crusma,Planktivore,Planctivoro,1,1.33217904,24.71160489,COMPLETO
+GH010819,Punta de Tralca,,ALA,1,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.676987774,432.4677423,COMPLETO
+GH010819,Punta de Tralca,,ALA,1,2023,Chromis crusma,Planktivore,Planctivoro,1,1.676987774,14.45799559,COMPLETO
+GH010819,Punta de Tralca,,ALA,1,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,1,1.676987774,404.2476411,COMPLETO
+GH010819,Punta de Tralca,,ALA,1,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,3,1.676987774,714.5362758,COMPLETO
+GH010819,Punta de Tralca,,ALA,1,2023,Isacia conceptionis ,Omnivore,Omnivoro,1,1.676987774,147.6608127,COMPLETO
+GH010819,Punta de Tralca,,ALA,1,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.676987774,58.57302546,COMPLETO
+GH010820,Punta de Tralca,,ALA,3,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,6,0.848685558,121.1070214,COMPLETO
+GH010820,Punta de Tralca,,ALA,3,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,0.848685558,669.9056701,COMPLETO
+GH010820,Punta de Tralca,,ALA,3,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,0.848685558,475.4173385,COMPLETO
+GH010822,Punta de Tralca,,ALA,1,2023,Chromis crusma,Planktivore,Planctivoro,1,0.950270539,24.71160489,COMPLETO
+GH010822,Punta de Tralca,,ALA,1,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,1,0.950270539,728.2800474,COMPLETO
+GH010822,Punta de Tralca,,ALA,1,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,3,0.950270539,105.4813852,COMPLETO
+GH010364,Punta de Tralca,,ALA,,2023,Prolatilus jugularis,General Carnivore ,Carnivoro,1,0.920851578,142.6266548,COMPLETO
+GH010364,Punta de Tralca,,ALA,,2023,Chromis crusma,Planktivore,Planctivoro,16,0.920851578,761.9673674,COMPLETO
+GH010364,Punta de Tralca,,ALA,,2023,Eptatretus polytrema,,,1,0.920851578,605.5517345,COMPLETO
+GH010364,Punta de Tralca,,ALA,,2023,Isacia conceptionis ,Omnivore,Omnivoro,37,0.920851578,15372.05658,COMPLETO
+GH010364,Punta de Tralca,,ALA,,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,0.920851578,435.169875,COMPLETO
+GH010364,Punta de Tralca,,ALA,,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,1,0.920851578,442.9149346,COMPLETO
+GH010702,Punta de Tralca,,ALA,1,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,0.636514168,808.4952822,COMPLETO
+GH010702,Punta de Tralca,,ALA,1,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,0.636514168,268.1920524,COMPLETO
+GH010703,Punta de Tralca,,ALA,3,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,0.636514168,622.4903797,COMPLETO
+GH010703,Punta de Tralca,,ALA,3,2023,NaN,NaN,Herbivoro,0,0,0,COMPLETO
+GH010703,Punta de Tralca,,ALA,3,2023,Prolatilus jugularis,General Carnivore ,Carnivoro,1,0.636514168,221.3068058,COMPLETO
+GH010699,Las Cruces,,AMERB,4,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,1.542675861,568.9092578,COMPLETO
+GH010699,Las Cruces,,AMERB,4,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.542675861,1456.560095,COMPLETO
+GH010699,Las Cruces,,AMERB,4,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.542675861,435.169875,COMPLETO
+GH010699,Las Cruces,,AMERB,4,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,4,1.542675861,116.7578469,COMPLETO
+GH010699,Las Cruces,,AMERB,4,2023,Auchenionchus variolosus,General Carnivore ,Carnivoro,1,1.542675861,36.2104641,COMPLETO
+GH010699,Las Cruces,,AMERB,4,2023,Chromis crusma,Planktivore,Planctivoro,7,1.542675861,267.0307935,COMPLETO
+GH010701,Las Cruces,,AMERB,5,2023,Chromis crusma,Planktivore,Planctivoro,8,1.28687263,380.9836837,COMPLETO
+GH010701,Las Cruces,,AMERB,5,2023,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.28687263,568.9092578,COMPLETO
+GH010701,Las Cruces,,AMERB,5,2023,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.28687263,268.1920524,COMPLETO
+GH010701,Las Cruces,,AMERB,5,2023,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.28687263,1456.560095,COMPLETO
+GH010701,Las Cruces,,AMERB,5,2023,Scartichthys viridis,Benthic Omnivore,Herbivoro,3,1.28687263,49.67821146,COMPLETO
+GH010819B,Cobquecura,Sur Centro,AMERB,4,2024,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.329661349,354.9652384,COMPLETO
+GH010819B,Cobquecura,Sur Centro,AMERB,4,2024,Pinguipes chilensis,General Carnivore ,Carnivoro,2,1.329661349,888.2450694,COMPLETO
+GH010819B,Cobquecura,Sur Centro,AMERB,4,2024,Chromis crusma,Planktivore,Planctivoro,2,1.329661349,77.75968786,COMPLETO
+GH010819B,Cobquecura,Sur Centro,AMERB,4,2024,Scartichthys viridis,Benthic Omnivore,Herbivoro,1,1.329661349,46.90835969,COMPLETO
+GH010310,Las Cruces,Central,AMCP,,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.732867951,93.81671938,COMPLETO
+GH010310,Las Cruces,Central,AMCP,,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,1,1.732867951,354.9652384,COMPLETO
+GH010310,Las Cruces,Central,AMCP,,2022,Bovichtus chilensis,Mobile Invertivore,Carnivoro,1,1.732867951,25.02967118,COMPLETO
+GH010310,Las Cruces,Central,AMCP,,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.732867951,563.3854898,COMPLETO
+GH010310,Las Cruces,Central,AMCP,,2022,Isacia conceptionis ,Omnivore,Omnivoro,1,1.732867951,85.92053127,COMPLETO
+GH010318,Las Cruces,Central,AMCP,2,2022,Chromis crusma,Planktivore,Planctivoro,1,1.277034259,24.71160489,COMPLETO
+GH010318,Las Cruces,Central,AMCP,2,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.277034259,215.9540645,COMPLETO
+GH010318,Las Cruces,Central,AMCP,2,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,2,1.277034259,20.68273385,COMPLETO
+GH010318,Las Cruces,Central,AMCP,2,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,3,1.277034259,848.481711,COMPLETO
+GX010092,Las Cruces,Central,AMCP,3,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,2,0.955699891,1587.747695,COMPLETO
+GX010092,Las Cruces,Central,AMCP,3,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,0.955699891,661.8408008,COMPLETO
+GX010092,Las Cruces,Central,AMCP,3,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,4,0.955699891,53.32425886,COMPLETO
+GX010091,Las Cruces,Central,AMCP,,2022,Cheilodactylus variegatus,Movile invertivore,Carnivoro,8,1.180304557,3459.741938,COMPLETO
+GX010091,Las Cruces,Central,AMCP,,2022,Scartichthys viridis,Benthic Omnivore,Herbivoro,3,1.180304557,91.59034209,COMPLETO
+GX010091,Las Cruces,Central,AMCP,,2022,Aplodactylus punctatus,Herbivore and Detritivore,Herbivoro,1,1.180304557,328.4400397,COMPLETO
+GX010091,Las Cruces,Central,AMCP,,2022,Pinguipes chilensis,General Carnivore ,Carnivoro,4,1.180304557,2913.12019,COMPLETO
